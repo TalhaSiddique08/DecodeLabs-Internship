@@ -1,0 +1,21 @@
+{
+  "name": "decodelabs-express-api",
+  "version": "1.0.0",
+  "description": "DecodeLabs Week 1 - Stateless REST API using Express.js",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test tests/api.test.js"
+  },
+  "keywords": [
+    "express",
+    "rest-api",
+    "decodelabs"
+  ],
+  "author": "DecodeLabs Intern",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

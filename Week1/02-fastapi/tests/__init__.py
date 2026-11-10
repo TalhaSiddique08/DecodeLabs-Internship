@@ -1,0 +1,2 @@
+"""FastAPI tests package."""
+

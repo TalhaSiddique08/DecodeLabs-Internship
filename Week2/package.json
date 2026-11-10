@@ -1,0 +1,39 @@
+{
+  "name": "decodelabs-project-2-crud",
+  "version": "1.0.0",
+  "description": "DecodeLabs Project 2: Database Integration (CRUD) using Express.js, Prisma, and Supabase PostgreSQL",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "node --test test/controller.test.js",
+    "test:all": "node --test test/controller.test.js test/validation.test.js",
+    "prisma:generate": "prisma generate",
+    "prisma:push": "prisma db push",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:studio": "prisma studio",
+    "db:check": "node scripts/check-connection.js",
+    "db:setup": "node scripts/setup-db.js",
+    "seed": "node prisma/seed.js"
+  },
+  "keywords": [
+    "express",
+    "prisma",
+    "postgresql",
+    "supabase",
+    "crud",
+    "rest-api"
+  ],
+  "author": "DecodeLabs",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^6.4.1",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14",
+    "prisma": "^6.4.1"
+  }
+}
